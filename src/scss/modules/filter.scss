@@ -1,0 +1,76 @@
+@use '../variables' as *;
+
+.filter {
+	padding: 60px 0;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__group {
+		border: none;
+	}
+
+	&__radio {
+		display: none;
+	}
+
+	&__radio:checked + .filter__label {
+		background-color: $light-orange;
+		color: $white;
+	}
+
+	&__label {
+		position: relative;
+		display: inline-block;
+		border-radius: 300px;
+		padding: 24px 16px 24px 60px;
+		max-width: 164px;
+		height: 72px;
+		background-color: $white;
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+		gap: 64px;
+	}
+
+	&__info-button {
+		display: flex;
+		gap: 8px;
+		align-items: center;
+	}
+
+	&__label_flower::before,
+	&__label_toys::before,
+	&__label_postcards::before {
+		top: 16px;
+		left: 16px;
+		width: 40px;
+		height: 40px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	&__label_flower::before {
+		position: absolute;
+		content: '';
+		background-image: url(/public/img/flower.svg);
+	}
+
+	&__label_toys::before {
+		position: absolute;
+		content: '';
+		background-image: url(/public/img/toys.svg);
+	}
+
+	&__label_postcards::before {
+		position: absolute;
+		content: '';
+		background-image: url(/public/img/postcard.svg);
+	}
+}
