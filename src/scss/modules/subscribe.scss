@@ -1,19 +1,13 @@
 @use '../variables' as *;
 
-.mail {
-	padding: 140px 0;
-
-	&__container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
+.subscribe {
+	padding: 80px 0 140px;
 
 	&__title {
-		margin-bottom: 50px;
+		margin-bottom: 40px;
 		font-family: $second-family;
 		font-weight: 400;
-		font-size: clamp(32px, 4vw, 50px);
+		font-size: 50px;
 		line-height: 1.2;
 		text-transform: uppercase;
 		text-align: center;
@@ -25,6 +19,7 @@
 		max-width: 524px;
 		width: 100%;
 		height: 40px;
+		margin: 0 auto;
 	}
 
 	&__input {
@@ -43,7 +38,7 @@
 		}
 	}
 
-	&__search-button {
+	&__button {
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -55,6 +50,5 @@
 		height: 40px;
 		border-radius: 32px;
 		background-color: $light-orange;
-		transform: rotate(-90deg);
 	}
 }
