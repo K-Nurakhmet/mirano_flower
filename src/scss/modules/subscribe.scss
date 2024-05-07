@@ -1,7 +1,12 @@
 @use '../variables' as *;
+@use '../media' as *;
 
 .subscribe {
 	padding: 80px 0 140px;
+
+	@include tablet {
+		padding: 60px 0 100px;
+	}
 
 	&__title {
 		margin-bottom: 40px;
@@ -12,6 +17,11 @@
 		text-transform: uppercase;
 		text-align: center;
 		color: $green;
+
+		@include tablet {
+			margin-bottom: 24px;
+			font-size: 32px;
+		}
 	}
 
 	&__form {
