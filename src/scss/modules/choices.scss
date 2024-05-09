@@ -6,8 +6,10 @@
 	}
 
 	&__box {
-		padding: 24px;
-		border-radius: 12px;
-		background-color: $white;
+		display: none;
+
+		&_open {
+			display: block;
+		}
 	}
 }
