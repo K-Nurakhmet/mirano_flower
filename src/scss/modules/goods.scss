@@ -7,7 +7,13 @@
 	&__container {
 		display: flex;
 		justify-content: center;
+		align-items: start;
 		gap: 20px;
+	}
+
+	&__box {
+		flex-grow: 1;
+		max-width: 970px;
 	}
 
 	@include tablet {
@@ -34,7 +40,6 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, 310px);
 		justify-content: center;
-		max-width: 970px;
 		margin: 0 auto;
 		gap: 24px 20px;
 

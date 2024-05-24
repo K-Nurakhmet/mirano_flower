@@ -2,7 +2,7 @@
 @use '../media' as *;
 
 .filter {
-	&__container {
+	&__form {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -103,7 +103,7 @@
 		border: 0;
 	}
 
-	&__choices_box {
+	&__choices-box {
 		position: absolute;
 		top: calc(100% + 20px);
 		left: 50%;
@@ -111,6 +111,12 @@
 		padding: 24px;
 		border-radius: 12px;
 		background-color: $white;
+
+		&_type {
+			@include mobile {
+				padding: 16px;
+			}
+		}
 	}
 
 	&__input-price {
@@ -120,6 +126,10 @@
 		border-radius: 32px;
 		border: none;
 		background-color: $bg;
+
+		@include mobile {
+			width: 80px;
+		}
 	}
 
 	&__type-list {
@@ -135,7 +145,12 @@
 
 	&__type-button {
 		white-space: nowrap;
+
 		&:hover {
+			color: $light-orange;
+		}
+
+		&:active {
 			color: $orange;
 		}
 	}
