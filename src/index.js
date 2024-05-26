@@ -6,12 +6,14 @@ import { renderProducts } from './scripts/renderProducts';
 import { initChoicesType } from './scripts/choicesType';
 import { filterProducts } from './scripts/filterProducts';
 import { fetchProducts } from './scripts/API';
+import { initSearchProducts } from './scripts/searchProducts';
 
 const init = () => {
   initHeaderFixer();
   initChoices();
   initChoicesType();
   initCart();
+  initSearchProducts();
   renderProducts();
   filterProducts();
 }

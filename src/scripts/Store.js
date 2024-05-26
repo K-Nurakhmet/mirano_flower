@@ -32,7 +32,7 @@ class Store {
 
     products.forEach(product => {
       if (product.categories) {
-        product.categories.forEach((categories) => {
+        product.categories.forEach((category) => {
           this.categories.add(category)
         })
       }

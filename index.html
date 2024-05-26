@@ -73,13 +73,13 @@
       <div class="container">
         <form class="filter__form">
           <fieldset class="filter__group">
-            <input class="filter__radio" type="radio" name="type" value="bouquets" id="bouquets">
+            <input class="filter__radio" type="radio" name="type" value="bouquets" id="bouquets" checked>
             <label class="filter__label filter__label_flower" for="bouquets">Цветы</label>
 
             <input class="filter__radio" type="radio" name="type" value="toys" id="toys">
             <label class="filter__label filter__label_toys" for="toys">Игрушки</label>
 
-            <input class="filter__radio" type="radio" name="type" value="postcards" id="postcards" checked>
+            <input class="filter__radio" type="radio" name="type" value="postcards" id="postcards">
             <label class="filter__label filter__label_postcard" for="postcards">Открытки</label>
           </fieldset>
 
@@ -90,8 +90,8 @@
 
               <div class="choices__box filter__choices-box">
                 <fieldset class="filter__price">
-                  <input class="filter__input-price" type="text" placeholder="от">
-                  <input class="filter__input-price" type="text" placeholder="до">
+                  <input class="filter__input-price" type="text" name="minPrice" placeholder="от">
+                  <input class="filter__input-price" type="text" name="maxPrice" placeholder="до">
                 </fieldset>
               </div>
             </div>
